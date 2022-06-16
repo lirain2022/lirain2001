@@ -17,12 +17,6 @@ header {
   padding: -50px;
   margin: 0 auto;
 }
-header img{
-
-
-
-}
-
 
 header h1 {
   color: #470909;
@@ -114,22 +108,58 @@ ul>li>a{
   margin: 0px 15px 40px 15px;
   /*上右下左*/
 }
-img fluid{
-  width: 100%;
-}
-aside>ul>li>a{
-  background-color: rgb(119, 26, 18);
-  font-size: 24px;
-  color: aliceblue;
-  padding: 5px;
-  border-radius: 5px;
-  letter-spacing: 5px;
+.btn-primary {
+  background-color: #bdb3a7;
+  padding: 15px;
+  color: black;
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 4px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
 }
-main a{
-  text-decoration: none;
-color: #470909;
+
+.btn-primary:hover {
+  background: black;
+  color: #bdb3a7;
+}
+
+.text-primary {
+  color: #90550b;
+}
+
+.img-wrap {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.img-overlay {
+  /* overflow: hidden; */
+  border-radius: 8px;
+  display: block;
+}
+
+.img-wrap img {
+  vertical-align: top;
+  transition: all 0.5s;
+}
+
+.img-wrap img:hover {
+  transform: scale(1.1);
+}
+
+.icon-new {
+  position: absolute;
+  width: 50px;
+  line-height: 50px;
+  color: white;
+  border-radius: 100%;
+  left: -20px;
+  top: -20px;
+  background-color: rgb(206, 65, 65);
+  padding: 5px;
+  text-align: center;
+}
+.img-rounded {
+  border-radius: 8px;
 }
