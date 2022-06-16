@@ -17,6 +17,12 @@ header {
   padding: -50px;
   margin: 0 auto;
 }
+header img{
+
+
+
+}
+
 
 header h1 {
   color: #470909;
@@ -107,7 +113,7 @@ div>ul>li>a{
   margin: 0px 15px 40px 15px;
   /*上右下左*/
 }
-img fuild{
+img fluid{
   width: 100%;
 }
 aside>ul>li>a{
