@@ -83,9 +83,10 @@ footer {
 }
 ul li{
   list-style-type: none;
-}
-div>ul>li>a{
 
+}
+ul>li>a{
+ text-decoration: none;
   text-decoration: none;
 }
 .col-9 {
@@ -127,4 +128,8 @@ aside>ul>li>a{
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+main a{
+  text-decoration: none;
+color: #470909;
 }
