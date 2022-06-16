@@ -50,7 +50,7 @@ section a {
   text-decoration: none;
 }
 
-.col-1 {
+.col-1 {display: flex;
   width: calc(100% / 3 - 30px);
   margin: 0px 15px 20px 15px;
 
@@ -59,7 +59,9 @@ section a {
 .row {
   display: flex;
   flex-wrap: wrap;
+
 }
+
 
 footer {
   background-color: antiquewhite;
@@ -70,11 +72,37 @@ footer {
 
 .breadcrumb a {
   color: black;
+  width: 100%;
 }
 ul li{
   list-style-type: none;
 }
 div>ul>li>a{
-  background-color: #ffbebe;
+
   text-decoration: none;
+}
+.col-9 {display: flex;
+
+  width: calc(100% / 1.333333 - 30px);
+  margin: 0px 15px 40px 15px;}
+  .col-8 {display: flex;
+    width: calc(100% / 1.5 - 30px);
+    margin: 0px 15px 40px 15px;
+    /*上右下左*/
+  }
+
+.col-6 {display: flex;
+  width: calc(100% / 2 - 30px);
+  margin: 0px 15px 40px 15px;
+  /*上右下左*/
+}
+.col-4 {display: flex;
+  width: calc(100% / 3 - 30px);
+  margin: 0px 15px 40px 15px;
+  /*上右下左*/
+}
+.col-3 {display: flex;
+  width: calc(100% / 4 - 30px);
+  margin: 0px 15px 40px 15px;
+  /*上右下左*/
 }
