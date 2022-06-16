@@ -52,7 +52,8 @@ section a {
 
 .col-1 {
   width: calc(100% / 3 - 30px);
-  margin: 0px 15px 40px 15px;
+  margin: 0px 15px 20px 15px;
+
 }
 
 .row {
@@ -64,13 +65,15 @@ footer {
   background-color: antiquewhite;
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-}
 
-section h3 {
-  display: flex;
-  margin-top: 10px;
-  background-color: aqua;
+
+
+.breadcrumb a {
+  color: black;
+}
+ul li{
+  list-style-type: none;
+}
+div>ul>li>a{
+  text-decoration: none;
 }
