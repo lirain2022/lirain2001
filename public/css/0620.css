@@ -16,10 +16,13 @@ header > h1 > a {
 header > .container > nav > ul > li > a {
   display: block;
   width: 100%;
+  
 }
 
 header > .container > nav > ul {
   display: block;
+
+
 }
 
 header > .container > nav > ul > li {
@@ -37,8 +40,10 @@ h1 {
 }
 
 h1 a {
-  background-color: #073f1a;
+  background-color: #834315;
   color: aliceblue;
+  padding: 5px;
+  margin: 0% auto;
 }
 
 .icon-menu {

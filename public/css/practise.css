@@ -124,7 +124,7 @@ ul>li>a{
 }
 
 .text-primary {
-  color: #90550b;
+  color: #9a713e;
 }
 
 .img-wrap {
@@ -162,4 +162,10 @@ ul>li>a{
 }
 .img-rounded {
   border-radius: 8px;
+}
+@for $i from 1 through 10{
+  .col-#{$i}{
+   width: calc(100% / #{$i} - 30px);
+   margin:0px 15px 40px 15px;
+  }
 }
