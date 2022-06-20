@@ -2,22 +2,20 @@ header {
   background-color: #9e7171;
 }
 
-header > h1 > a {
-  text-align: center;
-}
-
-header > nav > ul > li {
-  background-color: #ecee98;
-  list-style-type: none;
-  text-decoration: none;
-  text-align: center;
-  width: 100%;
-}
-
 header > .container > nav {
   width: 100%;
   float: left;
   position: absolute;
+  display: none;
+}
+
+header > h1 > a {
+  text-align: center;
+}
+
+header > .container > nav > ul > li > a {
+  display: block;
+  width: 100%;
 }
 
 header > .container > nav > ul {
@@ -28,15 +26,19 @@ header > .container > nav > ul > li {
   width: 100%;
 }
 
-h1 a {
-  background-color: #073f1a;
-  color: aliceblue;
+header > .container > nav.active {
+  display: block;
 }
 
 h1 {
   width: 95%;
   float: left;
   background-color: #7eb681;
+}
+
+h1 a {
+  background-color: #073f1a;
+  color: aliceblue;
 }
 
 .icon-menu {
@@ -51,4 +53,10 @@ h1 {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+@media (min-widtd: 768px) {
+  .icon-menu {
+    display: none;
+  }
 }
