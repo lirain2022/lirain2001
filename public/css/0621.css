@@ -382,6 +382,10 @@ dd > a {
  line-height:60px;
  border-bottom:1px solid #696363;
 }
+.submenu>li>a{
+  color:#578569;
+  display:block
+}
 .text-primary {
   color: #bdb3a7;
 }
