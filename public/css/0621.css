@@ -374,6 +374,14 @@ dd > a {
   color: #bdb3a7;
 }
 
+.submenu{
+  background-color: #bdb3a7;
+
+}
+.submenu>li{
+ line-height:60px;
+ border-bottom:1px solid #696363;
+}
 .text-primary {
   color: #bdb3a7;
 }
