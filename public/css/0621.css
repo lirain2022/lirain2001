@@ -23,7 +23,7 @@ body {
 }
 
 header {
-  background-color: #1f1f20;
+  background-color: #4b9962;
 }
 
 header > .container > h1 {
@@ -31,7 +31,7 @@ header > .container > h1 {
 }
 
 header > .container > h1 > a {
-  color: #bdb3a7;
+  color: #ffffff;
 }
 
 header > .container > nav > ul {
@@ -45,7 +45,7 @@ header > .container > nav > ul > li {
 
 header > .container > nav > ul > li > a {
   line-height: 60px;
-  color: #bdb3a7;
+  color: #b2ddbe;
   font-size: 1.2em;
   letter-spacing: 2px;
 }
@@ -308,7 +308,7 @@ header > .container > nav > ul > li > a {
   }
 }
 .title a {
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 1.5em;
   font-weight: 700;
 }
@@ -323,7 +323,7 @@ h2 {
 }
 
 footer {
-  background: #bdb3a7;
+  background: #578569;
   padding: 40px 0 40px 0;
 }
 
@@ -348,7 +348,7 @@ dd > a {
 }
 
 .breadcrumb a {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .w-20 {
@@ -419,7 +419,7 @@ dd > a {
     width: 15%;
     display: block;
     background-color: #bdb3a7;
-    color: black;
+    color: rgb(16, 103, 14);
     line-height: 60px;
     text-align: center;
   }
@@ -427,10 +427,27 @@ dd > a {
     position: relative;
   }
 
-  header > .container > nav {
+  header > .container  nav {
     width: 100%;
-  (max-width: 767px;)
+    position: absolute;
+    top:60px ;
+    background-color: rgb(10, 55, 36);
     /* display: none; */
+    
+  }
+  header{
+    position: fixed;
+    width: 100%;
+    z-index:-2;
+    transition: all 2s;
+  }
+  nav{
+    
+    transition:left .3s;
+  }
+  .icon-menu:hover + nav{
+    left:0px;
+    opacity: 1;
   }
 
   header > .container > nav.active {
@@ -448,6 +465,7 @@ dd > a {
 
   header > .container > nav > ul > li > a {
     display: block;
+    
   }
 
   .overflow-hidden {
