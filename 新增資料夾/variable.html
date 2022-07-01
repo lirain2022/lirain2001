@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+</head>
+
+<body>
+   <script>
+        'use strict' //嚴謹模式
+        // var num = 1 
+        // var num = 2
+        // console.log(num)
+
+        let box = 'test'
+        box = 'hello world'
+
+        const account = 'roy'
+
+        let birthday = '0718'
+        let name = '卜左'
+        name = '卜左'
+        console.log(account)
+        console.log('test')
+        //  alert('哈囉帥哥')
+        console.log(birthday)
+        console.log(name) 
+         
+        //字串相加
+        console.log(name + ',今天是' + birthday )
+        //ˋ模板字串符
+        console.log(`${name}你好,今天是${birthday}`)
+
+        //定義age的變數,變數存18進入
+        let age = 18
+        if(age >= 22 ){
+            console.log(`年齡為${age},可以喝酒`)
+        }else{
+            console.log(`年齡為${age},不可以喝酒`)
+        }    
+        let area = '台中'
+
+        if(age <= 12 || area == '台北' ){
+            console.log('優惠票180元')
+        }else{
+            console.log('一般遊客200元')
+
+            } // if ticket end
+        
+        let day = 2
+        if (day == 1){
+            console.log('星期一')
+        }else if( day == 2 ){
+            console.log('星期二')
+        }else if( day == 3 ){
+            console.log('星期三')
+        }else if( day == 4 ){
+            console.log('星期四')
+        }else if( day == 5 ){
+            console.log('星期五')
+        }else if( day == 6 ){
+            console.log('星期六')
+        }else if( day == 0 ){
+            console.log('星期日')
+        }
+        // //累加1
+        // let num =0
+        // num = 0
+        // console.log( num )
+        // //num = 1
+        // num = num +1
+        // num = num +1
+        // num = num +1
+        // num = num +1
+        // num = num +1
+        // num = num +1
+        // num = num +1
+        // num = num +1
+        // num = num +1
+        // num++
+        // console.log(num)
+        
+        // // //迴圈寫法
+        // while (num <= 20){
+        //     num = num +1
+        //     console.log(num)
+        // }
+
+        // i=0; 當i 小於 10 的時候; i累加 1
+        for(let i=0; i < 10; i++){
+        console.log('數字',i)}
+        // i=8; 當i 小於 0
+        for(let i=8; i > 0; i--){
+        console.log('數字',i)}
+
+        //陣列
+        let classmates = ['容萱', '玉靜', '宏誠', '昱棻', '如蕙']
+        console.log( classmates[0] )
+        console.log( classmates[1] )
+        console.log( classmates[2] )
+        console.log( classmates[3] )
+        console.log( classmates[4] )
+        
+        console.log( '名單人數',classmates.length )
+
+        for(let i = 0; i < classmates.length;i++){
+            // console.log('同學:', classmates[i])
+            // console.log('座號:'+ parseInt(i)+1 + '學員:' +classmates[i])
+            console.log(`座號${i+1}, 同學名稱: ${classmates[i]}`)
+        }
+
+        let pet = {
+            name: '小白',
+            age: 3,
+            color: 'White',
+            bark: function(){
+                alert('wolf')
+            }
+        }
+        console.log( pet.name )//點記法
+        // console.log( pet['name'])//括弧技法
+
+        // pet.bark()
+        // pet['bark']()
+
+        let user = {
+            name: 'zuo',
+            account:'52525',
+            password: 'dsdssdas',
+            mobile:'09156451231',
+            address: '412,興大路',
+        }
+   </script>
+</body>
+</html>

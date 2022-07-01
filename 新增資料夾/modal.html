@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .modal-wrapper{
+            position: fixed;
+            background-color: rgba(0,0,0,0.6);
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            /* display: none; */
+        }
+        .modal-wrapper.active{
+            display: block;
+        }
+        .modal-content{
+            position: absolute;
+            width: 80%;
+            max-width: 600px;
+            left:50%;
+            top:50%;
+            transform: translateX(-50%) translateY(-50%);
+            background-color: #fff;
+            padding:30px;
+            border-radius: 10px;
+        }
+        .btn-close{
+            position: absolute;
+            right:15px;
+            top:15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:;" onclick="openModal();" id="open-modal">打開蓋板</a>
+    <div class="modal-wrapper">
+        <div class="modal-content">
+            <div id="btn-close-switch" class="btn-close">X</div>    
+            廣告區塊
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <script>
+                let modal-wrapper = document.getElementsByClassName('modal-wrapper')[0]
+                let btnCloseSwitch = document.getElementById('btn-close-switch')
+                btnCloseSwitch.addEventListerner('click',closeModal)
+                modalWrapper.addEventListerner('click',closeModal)
+                function openModal(){
+                    modalwrapper.classList.add('active')
+                }//openmodal
+
+                function closeModal(){
+                    // modalWrapper.classList.remove('active')
+                }//closeModal 
+            </script>
+        </div>
+    </div>
+    <p>01</p>
+    <p>02</p>
