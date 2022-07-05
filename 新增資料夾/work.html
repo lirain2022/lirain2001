@@ -13,7 +13,7 @@
         <a href="#"><img class=" img fluid" src="public/logo.svg" width="50%"></a>
 
     </header>
-    <nav class="container">
+    <nav class="">
         <ul class="container-display-flex">
             <li><a href="#">客製化</a></li>
             <li><a href="#">預約訂花</a></li>
@@ -44,7 +44,7 @@
             <div class="main-img"><img class="img-fluid" src="public/images/1656311576144.jpg" alt=""></div>
             <div class="thumbnails">
                 
-                <img class="active" src="public/images/6.svg" alt="">
+                <img class="active style" src="public/images/11.svg" alt="">
                     <img class="img-fluid" src="public/images/7.svg" alt="">
                     <img class="img-fluid" src="public/images/8.svg" alt="" > 
                     <div class="text font-size" ><p>大明高中斜對面的傳統花店,
@@ -69,28 +69,44 @@
 </div>
 </div>
 <aside>
-    <div banner>
+    <div "banner">
 <div class="aside "><h1>作品及成品</h1></div>
 <div class=" row container ">
-    <div class="col-3">
-        <ul>
-            <h2 class="btn-primary2" href="#"  >成品</h2>
+    <div class="col-3 ">
+        <ul >
+            <li><a class="btn-primary" href="#" >成品</a></li>
             <li><a class="btn-primary" href="#" >精緻花束 </a></li>
             <li><a class="btn-primary" href="#" >小盆栽及開運</a></li>
             <li><a class="btn-primary" href="#">傳統花藝</a></li>
             <li><a class="btn-primary" href="#">羅馬柱及開幕 </a></li>
-        </ul>
+        </div>
+    </ul>
+    <div class="parent">
+            <div class="child">
+        <img src="public/cat-a.jpg" alt="">
+        <img src="public/cat-b.jpg" alt="">
+        <img src="public/cat-c.jpg" alt="">
+        <img src="public/cat-d.jpg" alt="">
     </div>
-    <div class="container-display-flex">
-    <div class="col-lg-4"><img  src="public/images/花束.jpg"width="500px" height="300px"><p class="font-size"></p></div>
-    <div class="col-lg-4 "><img   src="public/images/開運.jpg"  width="500px" height="300px"></div>
+    <div class="left-arrow"><</div>
+    <div class="right-arrow">></div>
+    <ol class="indicator">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
     
-    <div class="col-lg-4"><img   src="public/images/58d9c5a9da07ezbWoy.jpg"  width="500x" height="300px"><p class="font-size"></p></div>
-    <div class="col-lg-4 "><img   src="public/images/花500x300.jpg"  width="500px" height="300px"></div>
-    <div class="col-lg-4 "><img   src="public/images//1.jpg"  width="500px" height="300px"></div>
-    <div class="col-lg-4 "><img   src="public/images/d2.jpg"  width="500px" height="300px"></div>
-
 </div>
+</div>
+<div class="row">
+<div class="col-lg-4"><img  src="public/images/花束.jpg"width="500px" height="300px"><p class="font-size"></p></div>
+<div class="col-lg-4 "><img   src="public/images/開運.jpg"  width="500px" height="300px"></div>
+
+<div class="col-lg-4"><img   src="public/images/58d9c5a9da07ezbWoy.jpg"  width="500x" height="300px"><p class="font-size"></p></div>
+<div class="col-lg-4 "><img   src="public/images/花500x300.jpg"  width="500px" height="300px"></div>
+<div class="col-lg-4 "><img   src="public/images//1.jpg"  width="500px" height="300px"></div>
+<div class="col-lg-4 "><img   src="public/images/d2.jpg"  width="500px" height="300px"></div>
 </div>
 </section>
 
@@ -139,6 +155,35 @@
             $(this).addClass('active')
             $(this).siblings().removeClass('active')
         })//.thumbnails>img end
+        // ---分界線*---
+
+        let currentLeftNum = 0
+        $('.right-arrow').on('click',function(){
+            if( currentLeftNum == -1500 ){
+
+            }else{
+                // 每點一次箭頭會扣500
+                currentLeftNum = currentLeftNum - 500
+                console.log(currentLeftNum)
+                // 第二層 動畫 left位移一張圖片寬
+                $('.child').animate({'margin-left': currentLeftNum})
+            }
+
+        })// .right-arrow end
+
+        $('.left-arrow').on('click',function(){
+            if( currentLeftNum == 0 ){
+                // 假如 currentLeftNum == 0，執行這段
+            }else{
+                // 假如 currentLeftNum != 0，執行這段
+                // 每點一次箭頭會扣500
+                currentLeftNum = currentLeftNum + 500
+                // console.log(currentLeftNum)
+                // 第二層 動畫 left位移一張圖片寬
+                $('.child').animate({'margin-left': currentLeftNum})
+
+            }// if currentLeftNum end
+        })// .left-arrow end
 
         </script>
    

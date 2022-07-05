@@ -48,10 +48,10 @@ justify-content: space-around;
 }
 
 
-.display-flex-center{
+/* .display-flex-center{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 section > h1{
     color: rgb(0, 0, 0);
@@ -79,7 +79,7 @@ font-size: 10px;
 }
 .col-3 {
     width: calc(100% / 4 - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 80px 15px 40px 15px;
     /*上右下左*/
   }
   .style{
@@ -97,7 +97,7 @@ margin-left: 50px;
 .font-size{
 font-size: 14px ;
 line-height: 20px;
-color: rgb(66, 66, 66);
+color: rgb(0, 0, 0);
 }
 .btn-primary {
     background-color: #f0bcd3b4;
@@ -128,9 +128,7 @@ font-size: 18px;
 aside a{
 text-decoration: none;
 }
-div {
-    border-radius: 50px;
-}
+
 
 ul li{
         list-style-type: none;
@@ -145,11 +143,13 @@ aside{
     display: flex;
     flex-wrap: wrap;
     /* flex-direction: row; */
+    justify-content: center;
+    padding: 30px;
 }
 
 
 
-    @media (min-width: 780px) {
+    @media (min-width: 900px) {
         header > .container nav {
           width: 100%;
         }
@@ -181,6 +181,8 @@ section{
     width: calc(100% / 3 - 30px);
     margin: 0px 15px 20px 15px;
 }
+.div
+
 
 section > div{
     display: flex;
@@ -237,4 +239,76 @@ font-size: 5px;
 .thumbnails>img.active{
     display: block;
     border: 2px solid rgb(0, 0, 0);
-}
+}        .parent{
+            /* 可視範圍寬 */
+            width: 500px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+        }
+        .child{
+            /* 圖片寬度*項目個數 */
+            width: 2000px;
+            /* 去除行內空白，文字大小0 */
+            font-size: 0;
+        }
+    /* ----分界線--- */
+        .parent img{
+            /* 同.parent寬 */
+            width: 500px;
+           
+        }
+        /* div時用float */
+        /* .son{
+            float: left;
+        } */
+        .left-arrow, .right-arrow{
+            position: absolute;
+            cursor:pointer;
+            /* background-color: rgba(255, 255, 255, 0.52); */
+            width: 40px;
+            height: 100%;
+            top:0px;
+            /* 設定較小塊的感應區 */
+            /* height: 40px; */
+            /* top:50%; */
+            /* transform: translateY(-50%); */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:rgb(0, 0, 0);
+            font-size: 30px;
+        }
+        .left-arrow{
+            left:0px;
+        }
+        .right-arrow{
+            right:0px;
+        }
+        .indicator{
+            list-style-type: none;
+            margin:0;
+            padding: 0;
+            display: flex;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .indicator>li{
+            width: 10px;
+            height: 10px;
+            background-color: gray;
+            border-radius: 50px;
+            margin-right: 10px;
+            cursor: pointer;
+            
+        }
+        .indicator > li:last-child{
+            margin-right: 0;
+        }
+        .indicator>li.active{
+            background-color: rgb(67, 70, 70);
+        }
+        /* -----分界線----- */
+        
