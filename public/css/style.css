@@ -14,6 +14,7 @@ url(https://www.popdaily.com.tw/wp-content/uploads/2019/02/dbr3refrdrks84k88ok8g
 
 
 }
+
 header{
     width: 100%;
 height: 100%;
@@ -39,7 +40,7 @@ opacity: 90%;
 
 .container{
     margin: auto;
-    width: 100%;
+    /*  */
     max-width: 100%;
 
 }
@@ -161,10 +162,14 @@ aside{
 
 
     @media (min-width: 900px) {
-        header > .container nav {
+        header > .container aside {
           width: 100%;
         }
 }
+aside > div > ul > li {
+    position: relative;
+  }
+
 nav{
     background-color: rgb(255, 255, 255);
     display: block;
