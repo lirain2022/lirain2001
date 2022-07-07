@@ -161,14 +161,7 @@ aside{
 
 
 
-    @media (min-width: 900px) {
-        header > .container aside {
-          width: 100%;
-        }
-}
-aside > div > ul > li {
-    position: relative;
-  }
+
 
 nav{
     background-color: rgb(255, 255, 255);
