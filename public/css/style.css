@@ -144,20 +144,9 @@ margin-right: 10px;
 font-size: 18px;
 
 }
-ul{
-    /* display: flex; */
-    /* margin-right: 30px;
-justify-content: space-around; */
-max-width: 1140px;
-
-}
-
-
 ul li{
-        list-style-type: none;
-        /* margin-right: 30px;
-font-size: 18px; */
-    }
+    list-style-type: none;
+}
 aside{
     list-style-type: none;
 }  
@@ -473,12 +462,29 @@ font-size: 5px;
         100% { transform: rotate(360deg); }
     }
     /* 響應式web */
-    @media (min-width: 1200px) {
+    /* @media (min-width: 1200px) {
         .col-lg-1 {
           --num: calc(12 / 1);
           width: calc(100% / var(--num) - 30px);
           margin: 0px 15px 40px 15px;
+        
+        } */
+        ul{
+            display: flex; */
+        margin-right: 50px;
+        justify-content: space-around;
+       width="100%"
         }
+        
+        
+        
+        
+        ul li{
+                list-style-type: none;
+                margin-right: 10px;
+        font-size: 18px;
+            }
+        
       
         .col-lg-2 {
           --num: calc(12 / 2);
